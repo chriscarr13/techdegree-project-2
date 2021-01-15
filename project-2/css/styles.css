@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    color: #3a3a3a;
+    background: #f8f8f8ee;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+    color:#000;
+}
+
+h2,
+h3,
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+   margin-top: 0;
+}
+
+hr {
+    width: 90%;
+    border-top: 1.5px solid rgb(224, 224, 224); 
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+article {
+    padding-top: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*-------- Navigation bar ----------*/
+.nav-bar {
+    padding-bottom: 40px;
+}
+
+.student-name {
+    font-size: 1.60em;    
+}
+
+.student-name,
+.main-nav a {
+    display: block;
+    font-weight: 700;
+    padding: 10px 15px;
+}
+
+.main-nav a {
+    color:#000;    
+    font-size: .90em;
+}
+
+.main-nav li {
+    background-color: #fff;
+}
+
+.student-name,
+.main-nav li {
+    margin-top: 5px;
+}
+
+/*------------ header intro -------------*/
+
+.intro {
+    padding-bottom: 25px;
+}
+.header-info{
+    color: #878787;  
+    margin-top: 10px;
+}
+
+.intro img {
+    width: 70%;
+    padding-bottom: 10px;
+}
+.paragraph-basics {
+    font-weight: 300;
+    font-size: .92em; 
+}
+
+
+/*------------------ Layout Containers ------------------*/
+/******** portfolio content layout *******/
+#portfolio {
+    background: white;
+}
+
+.main-content {
+    padding-top: 40px;
+    padding-bottom:25px;
+}
+
+.portfolio-title {
+    padding-bottom: 40px;
+    font-size: 1.15em;
+    font-weight: 700;
+}
+
+.content-wrapper {
+    padding-top: 0;
+}
+
+.col h3 {
+    font-weight: 500;
+    font-size: 1.15em;
+    margin-top: 20px;   
+}
+
+.col p {
+    margin-top: 10px; 
+    padding-bottom: 25px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/******** contact layout ********/
+#contact {
+    color:#878787;
+    padding-top: 10px;
+}
+
+#contact div {
+    padding-bottom: 35px;
+}
+
+#contact h3 {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: .95em;
+    color: black;
+}
+
+.contact-intro{
+    padding-bottom: 15px;
+}
+
+.phone-email a {
+    font-weight: 600;
+    color:#878787;
+}
+/******** footer layout **********/
+/* bottom navigation */
+.bottom-nav {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.bottom-nav h4 {
+    font-size: .90em;
+    font-weight: 600;
+}
+
+.footer-name {
+    float: left;
+}
+
+.to-top {
+    float: right;
+}
+
+/* bottom navigation that wont be displayed until screen reaches 760px */
+.footer-nav {
+    display: none;
+    float: right;
+    padding-top: 0;
+}
+.footer-nav li {
+    display: inline-block; 
+    padding-top: 0;
+}
+.footer-nav a {
+    color:#3a3a3a;
+    font-weight: 600;
+    font-size: .90em;
+    padding-left: 1.5em;
+    padding-top: 0;
+}
+
+
+/* ------------ media queries ----------------- */
+
+@media (min-width: 768px) { /* medium size screen query */
+
+    *{
+        padding-top: 10px; 
+    }
+ 
+     /*---------- navigation ------------*/
+    .nav-bar {
+        padding-bottom: 25px;
+    }
+    .student-name {
+        margin: 0;
+        padding: 0;
+    }
+    .main-nav{
+        padding-top: 0;
+        
+    }
+    .main-nav li {
+        display: inline-block;
+        background: #f8f8f8ee;
+    }
+    
+    /*------------- header layout-------------*/
+    .intro {
+        padding-bottom: 40px;
+        display: inline-block;
+        padding-right: .45em;
+        padding-left:.45em; 
+    }
+
+    .intro img {
+        width: 40%;
+        float: right;
+        padding-left: 10px;
+    }
+
+    .intro p {
+        text-align: left;
+        padding-top: 0;
+        font-size: 1.11em;
+    }
+
+    /*----------- portfolio layout ------------*/
+    .main-content {
+        padding-top: 25px;
+        
+
+    }
+    .portfolio-title {
+        padding-bottom: 25px;
+    }
+    .content-wrapper {
+        margin: 0 auto;
+    } 
+
+    .col {
+        float: left; 
+        width:50%;
+        padding-right: .45em;
+        padding-left:.45em; 
+    }
+    
+    .col p {
+        width: 308px;
+        margin: 0 auto;
+        padding-left: .5em;
+        padding-right: .5em;  
+    }
+   
+
+    /*----------- contact ---------------*/
+    .contact-info {
+        width: 70%;
+    }
+
+    #contact p {
+        font-size: 1.15em;
+    
+    }
+
+    /*-------------- footer ---------------*/
+    hr,
+    footer,
+    .footer-name {
+        padding-top: 0;
+    }
+
+    .to-top {
+        display: none;
+    }
+    
+    .footer-nav {
+        display: block;
+    }
+
+} /* end medium size screen query */
+
+
+@media (min-width: 1024px) { /* large size screen query */
+    .container{
+        max-width: 1150px;
+    }
+
+/*------- navagation ----------*/
+    .student-name {
+        float: left;
+    }
+    .main-nav {
+        float: right;
+    }
+    .main-nav li {
+        padding-top: 0;
+        margin-top: 0;
+    }
+/*------ intro ------*/
+    .intro {
+        padding-right:0 ;
+        padding-left:0 ;
+    }
+    .intro p{
+        width:60%; 
+        padding-right: 30px;
+    } 
+
+/*----- main content layout -------*/
+    #portfolio {
+        background: #f8f8f8ee;
+    }
+    #portfolio h3 {
+        padding-top: 25px;
+
+    }
+
+    .main-content {
+        width: 95%;
+        background: white;
+        padding-left: 1em;
+        padding-right: 1em; 
+    }
+  
+    .content-wrapper{
+        padding-left: .2em;
+        padding-right: .2em; 
+        padding-bottom: 10px;
+    }
+    .col {
+        width: 33.3333333%;
+        
+        
+    }
+
+/*----- footer layout------*/
+    
+    .contact-intro {
+        padding-right: 90px;
+        padding-left: 90px;
+        padding-bottom: 30px;
+    }
+    
+    .contact-info p{
+        margin-bottom: 0;
+    }
+} /* end of large size screen query */
